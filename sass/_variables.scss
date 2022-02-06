@@ -1,0 +1,52 @@
+$font1: 'Roboto', sans-serif;
+
+$color1:#1A374D;
+$color2:#4FBDBA;
+$color3:#92A9BD;
+$color4:#AEFEFF;
+$colorDark: #222;
+
+
+$tablet-large:1200px;
+$tablet-mid:1000px;
+$tablet-small:850px;
+$phone-large:600px;
+$phone-mid:500px;
+$phone-small:380px;
+
+
+@keyframes picAnimation {
+    0%{
+        transform: translateX(0);
+    }
+    10%{
+        transform: translateX(0%);
+    }
+    20%{
+        transform: translateX(-100%);
+    }
+    30%{
+        transform: translateX(-200%);
+    }
+    40%{
+        transform: translateX(-300%);
+    }
+    50%{
+        transform: translateX(-400%);
+    }
+    60%{
+        transform: translateX(-400%);
+    }
+    70%{
+        transform: translateX(-300%);
+    }
+    80%{
+        transform: translateX(-200%);
+    }
+    90%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}

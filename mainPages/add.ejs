@@ -1,0 +1,32 @@
+<%- include("../partials/header"); -%>
+<%- include("../partials/navBar"); -%>
+
+<h1 class="testMessage">*admin page, you can add new animals from this form*</h1>
+<div class="add">
+    <form action="/add" method="post" enctype="multipart/form-data">
+        <input type="text" name="animalName" id="" placeholder="Animal Name" class="text" required>
+        <input type="text" name="animalAge" id="" placeholder="Animal Age" class="text" required>
+        <input type="text" name="animalHealth" id="" placeholder="Animal Health" class="text" required>
+        <input type="text" name="animalDiscription" id="" placeholder="Animal Discription *200 max" maxlength="200" class="text" required> 
+        <div class="radio">
+            <div>
+                <label for="dog">Dog</label>
+                <input type="radio" name="type" id="dog" value="dog" checked>
+            </div>
+            <div >
+                <label for="cat">Cat</label>
+                <input type="radio" name="type" id="cat" value="cat">
+            </div>
+            <div >
+                <label for="other">Other</label>
+                <input type="radio" name="type" id="other" value="other">
+            </div>
+
+        </div>
+        
+        <input type="file" name="pic" id="" placeholder="image" accept="image/*" class="text">
+        <button type="submit">Add</button>
+    </form>
+</div>
+
+<%- include ("../partials/footer"); -%>

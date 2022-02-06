@@ -1,0 +1,23 @@
+<%- include("../partials/header"); -%>
+<%- include("../partials/navBar"); -%>
+
+<div class="animalCard">
+    <div class="animalDisplay">
+        <img src="/imags/animals/<%=animal.image %>" alt="">
+        <div>
+            <div class="name">
+                <h1><%= animal.name %></h1>
+            </div>
+            <div class="description">
+                <h2>Age : <%= animal.age %></h2>
+                <h2>Health Condition : <%= animal.health %></h2> 
+                <p><%= animal.description %></p>
+                <p>* adobtion in store only </p>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+
+<%- include("../partials/footer"); -%>

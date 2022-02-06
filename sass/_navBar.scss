@@ -1,0 +1,82 @@
+
+.navBar{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px 0;
+    color: $color2;
+    background-color: $colorDark;
+    .logo{
+        text-transform: uppercase;
+        cursor:default;
+    }
+
+    .list{
+        ul{
+            list-style: none;
+            li{
+                a{
+                    text-decoration: none;
+                    margin-right: 30px;
+                    font-size: 20px;
+                    color: $color2;
+                    padding-bottom: 3px;
+                    border-bottom: 2.5px solid #222;
+                    &:hover{
+                       border-bottom: 2.5px solid $color2;
+                       transition: all .3s;
+                    }
+                }
+            }
+        }
+    }
+    @media (max-width:$tablet-large){
+        .logo{
+            font-size: 13px;
+        }
+        .list{
+
+            ul{
+                li{
+                    a{
+                        font-size: 13px;
+                    }
+                }
+            }
+        }
+    }
+    @media (max-width:$phone-large){
+        justify-content: space-between;
+        .logo{
+            font-size: 10px;
+        }
+        .list{
+
+            ul{
+                li{
+                    a{
+
+                        font-size: 10px;
+                    }
+                }
+            }
+        }
+    }
+    @media (max-width:$phone-small){
+        .logo{
+            
+            font-size: 8px;
+        }
+        .list{
+
+            ul{
+                li{
+                    a{
+                        margin-right: 10px;
+                        
+                    }
+                }
+            }
+        }
+    }
+}

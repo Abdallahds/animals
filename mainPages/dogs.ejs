@@ -1,0 +1,26 @@
+<%- include ("../partials/header"); -%>
+<%- include ("../partials/navBar"); -%>
+
+<div class="mainDisplay">
+   <% animals.forEach(element => {  %>
+      <div class="animal">
+         <div class="nameDiv">
+            <h1 class="name">
+               <%= element.name %>
+            </h1>
+         </div>
+         
+         
+         <img src="/imags/animals/<%=element.image %>" alt="">
+         <form action="/animal" method="post">
+            <input type="text" name="animalId" value="<%=element.id %>" class="input">
+            <button type="submit" class="link" name="more"> more details</button>
+         </form>
+         
+      </div>
+     
+  <%  }) %> 
+</div>
+
+
+<%- include ("../partials/footer"); -%>

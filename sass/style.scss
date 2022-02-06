@@ -1,0 +1,20 @@
+@import "variables";
+@import "navBar";
+@import "index";
+@import "footer";
+@import "animals";
+@import "add";
+@import "animalPage";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $font1;
+    text-align: center;
+    ::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+
